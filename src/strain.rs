@@ -4,13 +4,11 @@ use std::fs::File;
 use std::io::{BufRead, BufReader};
 
 /*
- Author Gaurav Sablok
- Email: codeprog@icloud.com
- Date 2024-2-23
+Gaurav Sablok
+codeprog@icloud.com
 */
 
-#[tokio::main]
-pub async fn bacdivestrainsearch(
+pub fn bacdivestrainsearch(
     bacdive_analyzer: &str,
     strainnumber: Option<String>,
 ) -> Result<Vec<BacdiveSearchSpecies>, Box<dyn Error>> {

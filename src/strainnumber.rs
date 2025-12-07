@@ -4,13 +4,11 @@ use std::fs::File;
 use std::io::{BufRead, BufReader};
 
 /*
- Author Gaurav Sablok
- Email: codeprog@icloud.com
- Date 2024-2-23
+Gaurav Sablok
+codeprog@icloud.com
 */
 
-#[tokio::main]
-pub async fn strainnumber(path: &str) -> Result<HashSet<String>, Box<dyn Error>> {
+pub fn strainnumber(path: &str) -> Result<HashSet<String>, Box<dyn Error>> {
     let fileopen = File::open(path).expect("file not found");
     let fileread = BufReader::new(fileopen);
     let mut strain: HashSet<String> = HashSet::new();

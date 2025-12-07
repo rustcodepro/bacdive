@@ -52,30 +52,30 @@ Options:
 - Example usage of the bacdive:
 
 ```
-bacdive id ./sample-file/bacdive-2025-01-17.csv 159652
+bacdive id ./sample-file/bacdive-2025-01-17.csv 159652 4
 The ids are: [BacdiveSpeciesJson { id: "159652", species: "Abditibacterium utsteinense", strain: "DSM 105287", information: " LMG 29911,Top surface sample consisting of weathered granite parent material, elevation 1382 m,Antarctica,Australia and Oceania,Environmental,Terrestrial,Geologic" }, BacdiveSpeciesJson { id: "159652", species: "same species", strain: "same strain", information: ",,,,,Climate,Cold,Alpine" }]
 
-bacdive species ./sample-file/bacdive-2025-01-17.csv Actinocatenispora-thailandica
+bacdive species ./sample-file/bacdive-2025-01-17.csv Actinocatenispora-thailandica 4
 The species and the associated information are: [BacdiveSpeciesJson { id: "7795", species: "Actinocatenispora thailandica", strain: "DSM 44816", information: " JCM 12343, PCU 235, BCRC 16831, CGMCC 4.5560, CIP 109347, NBRC 105041, NCIMB 14320,Environment, Soil, peat swamp forrestPeat swamp forest soilsoil,Thailand,Asia,Environmental,Terrestrial,Soil" }, BacdiveSpeciesJson { id: "161217", species: "Actinocatenispora thailandica", strain: "JCM 12344", information: " PCU 236,Peat swamp forest soil,Thailand,Asia,,," }]
 
-bacdive strain ./sample-file/bacdive-2025-01-17.csv DSM17304
+bacdive strain ./sample-file/bacdive-2025-01-17.csv DSM17304 4
 The strain specific information are as follows:[BacdiveSpeciesJson { id: "268", species: "Aeromonas tecta", strain: "DSM 17304", information: "tap water,Switzerland,Europe,Engineered,Built environment," }]
 ```
 
 ```
-bacdive id-list ./sample-file/bacdive-2025-01-17.csv
-bacdive species-list ./sample-file/bacdive-2025-01-17.csv
-bacdive id-list-analyze ./sample-file/bacdive-2025-01-17.csv
-bacdive species-list-analyze ./sample-file/advsearch_bacdive_2025-01-20.csv
-bacdive designation-list ./sample-file/advsearch_bacdive_2025-01-20.csv
-bacdive strain-number-list ./sample-file/advsearch_bacdive_2025-01-20.csv
-bacdive strainheader-list ./sample-file/advsearch_bacdive_2025-01-20.csv
+bacdive id-list ./sample-file/bacdive-2025-01-17.csv 4
+bacdive species-list ./sample-file/bacdive-2025-01-17.csv 4
+bacdive id-list-analyze ./sample-file/bacdive-2025-01-17.csv 4
+bacdive species-list-analyze ./sample-file/advsearch_bacdive_2025-01-20.csv 4
+bacdive designation-list ./sample-file/advsearch_bacdive_2025-01-20.csv 4
+bacdive strain-number-list ./sample-file/advsearch_bacdive_2025-01-20.csv 4
+bacdive strainheader-list ./sample-file/advsearch_bacdive_2025-01-20.csv 4
 ```
 
 - Web miner
 
 ```
-bacdive web-mine 159652
+bacdive web-mine 159652 4
 Strain identifier
 BacDive ID: -159652
 Type strain:

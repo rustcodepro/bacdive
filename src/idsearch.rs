@@ -3,9 +3,8 @@ use std::fs::File;
 use std::io::{BufRead, BufReader};
 
 /*
- Author Gaurav Sablok
- Email: codeprog@icloud.com
- Date 2024-2-23
+Gaurav Sablok
+codeprog@icloud.com
 */
 
 #[derive(Debug, Clone, PartialOrd, PartialEq)]
@@ -15,8 +14,7 @@ pub struct BacdiveSearchSpecies {
     pub speciesinformation: String,
 }
 
-#[tokio::main]
-pub async fn bacdiveidsearch(
+pub fn bacdiveidsearch(
     bacdive_analyzer: &str,
     bacdiveid: Option<String>,
 ) -> Result<Vec<BacdiveSearchSpecies>, Box<dyn Error>> {

@@ -4,16 +4,11 @@ use std::fs::File;
 use std::io::{BufRead, BufReader};
 
 /*
- Author Gaurav Sablok
- Email: codeprog@icloud.com
- Date 2024-2-23
+Gaurav Sablok
+codeprog@icloud.com
 */
 
-#[tokio::main]
-pub async fn species_write(
-    path: &str,
-    species: &str,
-) -> Result<Vec<BacdiveSpeciesJson>, Box<dyn Error>> {
+pub fn species_write(path: &str, species: &str) -> Result<Vec<BacdiveSpeciesJson>, Box<dyn Error>> {
     let mut bacstring: Vec<String> = Vec::new();
     let bacopen = File::open(path).expect("file not found");
     let bacread = BufReader::new(bacopen);
